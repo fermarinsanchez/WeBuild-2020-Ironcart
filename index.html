@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IronCart | ¿Qué necesitas comprar?</title>
+
+    <!-- Tipografías y estilos -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway:300&display=swap">
+    <link rel="stylesheet" href="css/style.css">
+
+    <!-- Favicon -->
+    <link rel="icon" href="img/ironhack-logo-200.png">
+</head>
+
+<body>
+
+    <header>
+        <img src="img/ironhack-logo-200.png" alt="Logotipo Ironhack">
+        <h1>IronCart</h1>
+    </header>
+
+    <main>
+
+        <article>
+
+            <h2>Catálogo</h2>
+
+            <div class="filters">
+                <span>Ver productos...</span>
+                <button id="all">Todos</button>
+                <button id="prox">De proximidad</button>
+                <button id="sport">Para deportistas</button>
+                <button id="diet">Dietéticos</button>
+            </div>
+
+            <ul id="availableFoodsList"> </ul>
+
+        </article>
+
+
+        <article>
+
+            <h2>Lista de la compra <span id="counter">0</span></h2>
+
+            <ul id="buyingFoodsList"></ul>
+
+            <div>
+                <p id="result">
+                    Precio total para 0 artículo(s): 0€
+                    <span>Precio medio producto: 0€ | Kcal media producto: 0 Kcal</span>
+
+
+                </p>
+            </div>
+        </article>
+
+    </main>
+
+    <script src="js/data.js"></script>
+    <script src="js/app.js"></script>
+
+</body>
+
+</html>
